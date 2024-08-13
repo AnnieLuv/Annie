@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+    <script type="text/javascript" src="./main.js"></script>
+    <link rel="stylesheet" href="./animations.css" />
+    <link rel="stylesheet" href="./hamburger.css" />
+
+
+    <!-- *********************************FONTS******************************* -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <!-- ********************************************************************************* -->
+   
+   
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  </head>
+  <body>
+  <!-- blur() onoly works when is set the bckground image like this -->
+  <img id="bckground-img" src="./images/abstract-blurry-smooth-pink-color-generative-ai.jpg"> 
+    <section>
+    <section class="grid layout">
+       <div class="home bar">
+        <img class="icon" src="./images/heart-icon.png"/>
+        <h1 id="title">Annie Chang</h2>
+      </div>
+      <div class="grid selfie">
+        <div class="container">
+          <div class='hamburger' onclick="isclicked()">
+            <div class="layer one" ></div>
+            <div class="layer two" ></div>
+            <div class="layer three" ></div>
+         </div>
+        <div class="side bar">
+          <div class="wrapper">
+            <h1>Options</h1>
+            <a> About Me</a>
+            <a> Album</a>
+            <a href="./faq-page/FAQ.html"> FAQ</a>
+          </div>
+         </div>
+          <div class="image wrapper">
+            <div class="layer one"> </div>
+            <div class="layer two"> </div>
+            <div class="layer three"> </div>
+            <div class="layer four"></div>
+          </div>
+          <nav class="socials">
+            <a class="ig">
+              <img class="logo" src="./images/instagram.png">
+            </a>
+            <a class="fb">
+              <img class="logo" src="./images/facebook.png">
+            </a>
+            <a class="twitter">
+              <img class="logo" src="./images/twitter (1).png">
+            </a>    
+            <a class="twitch">
+              <img class="logo" src="./images/twitch.png">
+            </a>     
+          </nav>
+ 
+        </div>
+        </div>
+ 
+      <div class="grid info">
+        <div class="top-bar">
+          <a id="email-link"><span id="email-me">Email Me:</span><span id="my-email">&nbsp &nbspShestheone@gmail.com</span></a>
+        </div>
+        <div class="container one">
+            <h1 style="font-size: 3.5rem">HI, I'M <span id="Annie">ANNIE</span>
+            <br>
+            <span style="font-size: 2.7rem">LET'S MAKE YOUR DREAM WEBSITE A GLAMOROUS REALITY!</span></h1>
+            <p class="description">
+              My Goal Is to create <span class="hightlights">beautiful layouts</span> with striking effects and
+              <span class="hightlights">responsiveness</span>. Let me help you create a website which speaks to
+              you. I am here to bring your  <span class="hightlights">dream website</span> into reality! Feel free
+              to contact me with whichever method listed you feel most
+              comfortable.Lorem ipsum odor amet, consectetuer adipiscing elit. Lobortis libero tortor rhoncus eget maecenas dolor orci ante est. Nunc blandit dignissim dolor felis ultrices nec. Nisl finibus nibh aliquet; elit varius arcu dis vel.
+            </p>
+            <a class="my-work"><span></span>&nbsp&nbsp&nbsp&nbspView My Work</a>
+            <div class="location">
+              <span>Based In</span>
+              <br>
+              <span class="my-city">Los Angeles, California</span>
+            </div>
+        </div>
+      
+        <!-- <div class="container two">
+          <div class="swiper"> 
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  <h1 class="title">What Can I Do?</h1>
+                  <ul class="points">
+                    <li>
+                      placeholder  placeholder  placeholder  placeholder
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content"></div>
+              </div>
+            </div> 
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+     <!-- scripts need to be included below for swiper js to work -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper', {    
+    slidesPerView: 1,
+    simulateTouch:true,
+    speed: 300,
+    spaceBetween: 20,
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    }    
+    });
+
+    </script>
+  </body>
+</html>
